@@ -4,16 +4,16 @@ Created on Thu Aug  6 15:18:20 2020
 
 @author: eric1
 """
-   # just for the root:
+   
 class Node:
     
-    def __init__(self,data):
+    def __init__(self,data):                            
         
         self.left=None
         self.right=None
         self.data=data
         
-    def insert(self,data):
+    def insert(self,data):                                                   # inserting children
         if self.data:
             if data < self.data:
                 if self.left is None:
@@ -34,7 +34,7 @@ class Node:
         
     
         
-    def Print(self):
+    def Print(self):                                           #prints out the tree
         if self.left:
             self.left.Print()
         print (self.data)
@@ -43,7 +43,7 @@ class Node:
         
         
 
-root=Node(10)
+root=Node(10)                                                # creates the root
 root.insert(12)
 root.insert(6)
 root.insert(3)
